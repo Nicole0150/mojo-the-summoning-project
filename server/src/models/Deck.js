@@ -1,6 +1,6 @@
-const {db, Model, DataTypes} = require("../db/config");
+const {db, DataTypes} = require("../db/config");
 
-let Deck = db.define("Deck", {
+let Deck = db.define("deck", {
     id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
@@ -11,4 +11,4 @@ let Deck = db.define("Deck", {
 
 module.exports = {
     Deck,
-}
+};
