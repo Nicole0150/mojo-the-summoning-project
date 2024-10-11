@@ -9,10 +9,10 @@ let attack
 beforeAll(async () => {
   await db.sync({ force: true })
   attack = await Attack.create({
-    title: 'myTitle',
+    title: "myTitle",
     mojoCost: 10,
     staminaCost: 5,
- })
+  })
 })
 
 // clear db after tests
